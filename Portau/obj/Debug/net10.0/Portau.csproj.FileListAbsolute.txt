@@ -1,0 +1,14 @@
+/home/andrej/Documents/Portau/Portau/bin/Debug/net10.0/Portau
+/home/andrej/Documents/Portau/Portau/bin/Debug/net10.0/Portau.deps.json
+/home/andrej/Documents/Portau/Portau/bin/Debug/net10.0/Portau.runtimeconfig.json
+/home/andrej/Documents/Portau/Portau/bin/Debug/net10.0/Portau.dll
+/home/andrej/Documents/Portau/Portau/bin/Debug/net10.0/Portau.pdb
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/Portau.GeneratedMSBuildEditorConfig.editorconfig
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/Portau.AssemblyInfoInputs.cache
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/Portau.AssemblyInfo.cs
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/Portau.csproj.CoreCompileInputs.cache
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/Portau.dll
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/refint/Portau.dll
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/Portau.pdb
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/Portau.genruntimeconfig.cache
+/home/andrej/Documents/Portau/Portau/obj/Debug/net10.0/ref/Portau.dll
