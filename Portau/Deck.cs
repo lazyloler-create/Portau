@@ -7,8 +7,8 @@ public class Deck
 {
     private static readonly List<string> DeckCards =
     [
-        "Cards/AH.png", "Cards/AD.png", "Cards/AC.png", "Cards/AS.png",
-        "Cards/2H.png", "Cards/2D.png", "Cards/2C.png", "Cards/2S.png",
+        "Cards/AH.png", "Cards/AD.png", "Cards/AC.png", "Cards/AS.png", 
+        "Cards/2H.png", "Cards/2D.png", "Cards/2C.png", "Cards/2S.png", 
         "Cards/3H.png", "Cards/3D.png", "Cards/3C.png", "Cards/3S.png",
         "Cards/4H.png", "Cards/4D.png", "Cards/4C.png", "Cards/4S.png",
         "Cards/5H.png", "Cards/5D.png", "Cards/5C.png", "Cards/5S.png",
@@ -17,20 +17,20 @@ public class Deck
         "Cards/8H.png", "Cards/8D.png", "Cards/8C.png", "Cards/8S.png",
         "Cards/9H.png", "Cards/9D.png", "Cards/9C.png", "Cards/9S.png",
         "Cards/10H.png", "Cards/10D.png", "Cards/10C.png", "Cards/10S.png",
-        "Cards/JH.png", "Cards/JD.png", "Cards/JC.png", "Cards/JS.png",
+        "Cards/JH.png", "Cards/JD.png", "Cards/JC.png", "Cards/JS.png", 
         "Cards/QH.png", "Cards/QD.png", "Cards/QC.png", "Cards/QS.png",
-        "Cards/KH.png", "Cards/KD.png", "Cards/KC.png", "Cards/KS.png"
+        "Cards/KH.png", "Cards/KD.png", "Cards/KC.png", "Cards/KS.png",
+        "Cards/Joker.png", "Cards/Joker.png", "Cards/Joker.png", "Cards/Joker.png"
     ];
 
     public List<string> GetCards()
     {
-        return DeckCards;
+        return new List<string>(DeckCards);
     }
-    
-    
+
     public List<string> CreateDeck()
     {
-        var deck = new List<string>(DeckCards);
+        var deck = GetCards();
         for (int i = deck.Count - 1; i > 0; i--)
         {   
             int j = Random.Shared.Next(i + 1);
@@ -39,7 +39,7 @@ public class Deck
 
         return deck;
     }
-    
+
     public void DealCards(List<string> deck, List<string> player1, List<string> player2, int cardsPerPlayer = 4)
     {
         ArgumentNullException.ThrowIfNull(deck);
@@ -61,5 +61,17 @@ public class Deck
             player2.Add(deck[0]);
             deck.RemoveAt(0);
         }
+    }
+
+    public bool HasJokers(List<string> deck)
+    {
+        foreach (var card in deck)
+        {
+            if (card.Equals("Cards/Joker.png", StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
