@@ -1,0 +1,37 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.AvaloniaUseCompiledBindingsByDefault = true
+build_property.AvaloniaMainPackageVersion = 12.1.6
+build_property.AvaloniaPreviewerNetCoreToolPath = /home/andrej/.nuget/packages/avalonia/12.1.6/buildTransitive//../tools/net8.0/designer/Avalonia.Designer.HostApp.dll
+build_property.AvaloniaResourcePaths = /home/andrej/RiderProjects/Portau/Portau/Cards/10C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/10D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/10H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/10S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/2C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/2D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/2H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/2S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/3C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/3D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/3H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/3S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/4C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/4D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/4H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/4S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/5C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/5D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/5H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/5S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/6C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/6D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/6H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/6S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/7C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/7D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/7H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/7S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/8C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/8D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/8H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/8S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/9C.png,/home/andrej/RiderProjects/Portau/Portau/Cards/9D.png,/home/andrej/RiderProjects/Portau/Portau/Cards/9H.png,/home/andrej/RiderProjects/Portau/Portau/Cards/9S.png,/home/andrej/RiderProjects/Portau/Portau/Cards/AC.png,/home/andrej/RiderProjects/Portau/Portau/Cards/aces.png,/home/andrej/RiderProjects/Portau/Portau/Cards/AD.png,/home/andrej/RiderProjects/Portau/Portau/Cards/AH.png,/home/andrej/RiderProjects/Portau/Portau/Cards/AS.png,/home/andrej/RiderProjects/Portau/Portau/Cards/back_cards-07.png,/home/andrej/RiderProjects/Portau/Portau/Cards/blue_back.png,/home/andrej/RiderProjects/Portau/Portau/Cards/gray_back.png,/home/andrej/RiderProjects/Portau/Portau/Cards/green_back.png,/home/andrej/RiderProjects/Portau/Portau/Cards/honors_spade-14.png,/home/andrej/RiderProjects/Portau/Portau/Cards/honor_clubs.png,/home/andrej/RiderProjects/Portau/Portau/Cards/honor_diamond.png,/home/andrej/RiderProjects/Portau/Portau/Cards/honor_heart-14.png,/home/andrej/RiderProjects/Portau/Portau/Cards/JC.png,/home/andrej/RiderProjects/Portau/Portau/Cards/JD.png,/home/andrej/RiderProjects/Portau/Portau/Cards/JH.png,/home/andrej/RiderProjects/Portau/Portau/Cards/Joker.png,/home/andrej/RiderProjects/Portau/Portau/Cards/JS.png,/home/andrej/RiderProjects/Portau/Portau/Cards/KC.png,/home/andrej/RiderProjects/Portau/Portau/Cards/KD.png,/home/andrej/RiderProjects/Portau/Portau/Cards/KH.png,/home/andrej/RiderProjects/Portau/Portau/Cards/KS.png,/home/andrej/RiderProjects/Portau/Portau/Cards/purple_back.png,/home/andrej/RiderProjects/Portau/Portau/Cards/QC.png,/home/andrej/RiderProjects/Portau/Portau/Cards/QD.png,/home/andrej/RiderProjects/Portau/Portau/Cards/QH.png,/home/andrej/RiderProjects/Portau/Portau/Cards/QS.png,/home/andrej/RiderProjects/Portau/Portau/Cards/red_back.png,/home/andrej/RiderProjects/Portau/Portau/Cards/yellow_back.png,/home/andrej/RiderProjects/Portau/Portau/App.axaml,/home/andrej/RiderProjects/Portau/Portau/MainWindow.axaml,/home/andrej/RiderProjects/Portau/Portau/SettingsWindow.axaml
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Portau
+build_property.ProjectDir = /home/andrej/RiderProjects/Portau/Portau/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[/home/andrej/RiderProjects/Portau/Portau/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/andrej/RiderProjects/Portau/Portau/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/andrej/RiderProjects/Portau/Portau/SettingsWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

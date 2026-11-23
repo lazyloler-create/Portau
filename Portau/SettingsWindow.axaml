@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Portau.SettingsWindow"
+        Title="Settings"
+        Width="380"
+        Height="470"
+        MinWidth="340"
+        MinHeight="430"
+        CanResize="False"
+        WindowStartupLocation="CenterOwner">
+    <Grid RowDefinitions="Auto,*,Auto,Auto" Margin="20">
+        <TextBlock Text="Settings" FontSize="22" FontWeight="SemiBold" />
+
+        <StackPanel Grid.Row="1" Margin="0,16,0,12" Spacing="10">
+            <StackPanel Spacing="5">
+                <TextBlock Text="Player 1" />
+                <TextBox x:Name="Player1NameInput" PlaceholderText="Player 1" />
+            </StackPanel>
+            <StackPanel Spacing="5">
+                <TextBlock Text="Player 2" />
+                <TextBox x:Name="Player2NameInput" PlaceholderText="Player 2" />
+            </StackPanel>
+            <Button Content="Swap players" HorizontalAlignment="Left" Click="OnSwapPlayersClick" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                <Button Content="Restart round" Click="OnRestartClick" />
+                <Button Grid.Column="1" Content="Card list" Click="OnCardListClick" />
+            </Grid>
+            <Button Content="Help?" HorizontalAlignment="Left" Click="OnHelpClick" />
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="RESET GAME" Classes="reset"
+                HorizontalAlignment="Stretch" Click="OnResetGameClick" />
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right"
+                    Spacing="8" Margin="0,12,0,0">
+            <Button Content="Cancel" Click="OnCancelClick" />
+            <Button Content="Save" IsDefault="True" Click="OnSaveClick" />
+        </StackPanel>
+    </Grid>
+
+    <Window.Styles>
+        <Style Selector="Button.reset">
+            <Setter Property="Background" Value="#F20D18" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="12,8" />
+        </Style>
+    </Window.Styles>
+</Window>

@@ -1,0 +1,168 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1114" d:DesignHeight="627"
+        x:Class="Portau.MainWindow"
+        Title="Portau"
+        Width="1114"
+        Height="627"
+        MinWidth="760"
+        MinHeight="480"
+        Background="White">
+    <Grid RowDefinitions="150,*,150" Margin="8">
+        <Grid Grid.Row="0" ColumnDefinitions="*,Auto,*,Auto">
+            <Border Grid.Column="0" Background="#B5D0FA" Padding="12,10"
+                    HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="Player2ScoreLabel" Text="Points: 0" FontWeight="SemiBold" />
+            </Border>
+
+            <Border Grid.Column="1" Background="#D8D8D8" Padding="16,12"
+                    HorizontalAlignment="Center" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" Spacing="20">
+                    <Button x:Name="TopSlot1" Classes="slot" AutomationProperties.Name="Top slot 1" />
+                    <Button x:Name="TopSlot2" Classes="slot" AutomationProperties.Name="Top slot 2" />
+                    <Button x:Name="TopSlot3" Classes="slot" AutomationProperties.Name="Top slot 3" />
+                    <Button x:Name="TopSlot4" Classes="slot" AutomationProperties.Name="Top slot 4" />
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Background="#B8EAF5" Padding="12,10"
+                    HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock x:Name="Player2Label" Text="Player 2" FontWeight="SemiBold" />
+            </Border>
+            <Button Grid.Column="3" Content="Settings" Classes="settings"
+                    ToolTip.Tip="Settings" VerticalAlignment="Top"
+                    Click="OnSettingsClick" />
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="24,0" ColumnDefinitions="Auto,*" ColumnSpacing="12">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="6"
+                        Margin="0,20,0,0">
+                <Button x:Name="DeckButton" Classes="deck" AutomationProperties.Name="Deal cards"
+                        Click="OnDeckClick">
+                    <Image Source="avares://Portau/Cards/blue_back.png" Stretch="Fill" />
+                </Button>
+                <TextBlock Text="Deck" HorizontalAlignment="Center" FontSize="12" />
+            </StackPanel>
+
+            <ScrollViewer Grid.Column="1"
+                          HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Disabled"
+                          VerticalAlignment="Center">
+                <Grid MinWidth="900" VerticalAlignment="Center"
+                      ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*">
+                    <Button x:Name="AceOfHearts" Grid.Column="0" Classes="card" AutomationProperties.Name="Ace of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/AH.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="TwoOfHearts" Grid.Column="1" Classes="card" AutomationProperties.Name="2 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/2H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="ThreeOfHearts" Grid.Column="2" Classes="card" AutomationProperties.Name="3 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/3H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="FourOfHearts" Grid.Column="3" Classes="card" AutomationProperties.Name="4 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/4H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="FiveOfHearts" Grid.Column="4" Classes="card" AutomationProperties.Name="5 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/5H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="SixOfHearts" Grid.Column="5" Classes="card" AutomationProperties.Name="6 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/6H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="SevenOfHearts" Grid.Column="6" Classes="card" AutomationProperties.Name="7 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/7H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="EightOfHearts" Grid.Column="7" Classes="card" AutomationProperties.Name="8 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/8H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="NineOfHearts" Grid.Column="8" Classes="card" AutomationProperties.Name="9 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/9H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="TenOfHearts" Grid.Column="9" Classes="card" AutomationProperties.Name="10 of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/10H.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="JackOfHearts" Grid.Column="10" Classes="card" AutomationProperties.Name="Jack of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/JH.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="QueenOfHearts" Grid.Column="11" Classes="card" AutomationProperties.Name="Queen of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/QH.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="KingOfHearts" Grid.Column="12" Classes="card" AutomationProperties.Name="King of Hearts"
+                            Click="OnHandCardClick">
+                        <Image Source="avares://Portau/Cards/KH.png" Opacity="0.2" Stretch="Fill" />
+                    </Button>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+
+        <Grid Grid.Row="2" ColumnDefinitions="*,Auto,*,Auto">
+            <Border Grid.Column="0" Background="#B8EAF5" Padding="12,10"
+                    HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                <TextBlock x:Name="Player1Label" Text="Player 1" FontWeight="SemiBold" />
+            </Border>
+
+            <Border Grid.Column="1" Background="#D8D8D8" Padding="16,12"
+                    HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <StackPanel Orientation="Horizontal" Spacing="20">
+                    <Button x:Name="BottomSlot1" Classes="slot" AutomationProperties.Name="Bottom slot 1" />
+                    <Button x:Name="BottomSlot2" Classes="slot" AutomationProperties.Name="Bottom slot 2" />
+                    <Button x:Name="BottomSlot3" Classes="slot" AutomationProperties.Name="Bottom slot 3" />
+                    <Button x:Name="BottomSlot4" Classes="slot" AutomationProperties.Name="Bottom slot 4" />
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Background="#B5D0FA" Padding="12,10"
+                    HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <TextBlock x:Name="Player1ScoreLabel" Text="Points: 0" FontWeight="SemiBold" />
+            </Border>
+        </Grid>
+    </Grid>
+
+    <Window.Styles>
+        <Style Selector="Button.slot">
+            <Setter Property="Width" Value="72" />
+            <Setter Property="Height" Value="112" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+        <Style Selector="Button.card">
+            <Setter Property="Width" Value="56" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Background" Value="LightGray" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Height" Value="92" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style Selector="Button.deck">
+            <Setter Property="Width" Value="90  " />
+            <Setter Property="Height" Value="128" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="#B8B8B8" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+        <Style Selector="Button.settings">
+            <Setter Property="MinWidth" Value="80" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Padding" Value="10,6" />
+            <Setter Property="Background" Value="#D8D8D8" />
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+    </Window.Styles>
+</Window>
