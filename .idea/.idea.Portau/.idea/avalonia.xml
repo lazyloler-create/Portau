@@ -5,6 +5,7 @@
       <map>
         <entry key="Portau/App.axaml" value="Portau/Portau.csproj" />
         <entry key="Portau/MainWindow.axaml" value="Portau/Portau.csproj" />
+        <entry key="Portau/SettingsWindow.axaml" value="Portau/Portau.csproj" />
       </map>
     </option>
   </component>

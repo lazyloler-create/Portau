@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Portau")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6df54f158b53ea8ff141398e321a0d824515e948")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3ed4556ffd66f5d9eb90ab1821c13408b67bab9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Portau")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Portau")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
