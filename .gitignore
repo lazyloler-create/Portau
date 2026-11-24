@@ -1,0 +1,15 @@
+# IDE and user-specific files
+.idea/
+.vs/
+*.user
+*.suo
+*.DotSettings.user
+
+# Build output
+**/bin/
+**/obj/
+**/Dependencies/
+
+# Operating system files
+.DS_Store
+Thumbs.db
