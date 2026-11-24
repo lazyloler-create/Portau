@@ -89,3 +89,4 @@
 /home/andrej/RiderProjects/Portau/Portau/obj/Debug/net10.0/Portau.pdb
 /home/andrej/RiderProjects/Portau/Portau/obj/Debug/net10.0/Portau.genruntimeconfig.cache
 /home/andrej/RiderProjects/Portau/Portau/obj/Debug/net10.0/ref/Portau.dll
+/home/andrej/RiderProjects/Portau/Portau/obj/Debug/net10.0/Portau.sourcelink.json

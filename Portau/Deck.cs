@@ -23,21 +23,29 @@ public class Deck
         "Cards/Joker.png", "Cards/Joker.png", "Cards/Joker.png", "Cards/Joker.png"
     ];
 
+    private List<string> _currentDeck = new(DeckCards);
+
     public List<string> GetCards()
+    {
+        return _currentDeck;
+    }
+
+    public List<string> GetDeck()
     {
         return new List<string>(DeckCards);
     }
 
     public List<string> CreateDeck()
     {
-        var deck = GetCards();
+        var deck = GetDeck();
         for (int i = deck.Count - 1; i > 0; i--)
         {   
             int j = Random.Shared.Next(i + 1);
             (deck[i], deck[j]) = (deck[j], deck[i]);
         }
 
-        return deck;
+        _currentDeck = deck;
+        return _currentDeck;
     }
 
     public void DealCards(List<string> deck, List<string> player1, List<string> player2, int cardsPerPlayer = 4)
@@ -63,6 +71,8 @@ public class Deck
         }
     }
 
+    
+    
     public bool HasJokers(List<string> deck)
     {
         foreach (var card in deck)

@@ -20,10 +20,10 @@
             <Border Grid.Column="1" Background="#D8D8D8" Padding="16,12"
                     HorizontalAlignment="Center" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal" Spacing="20">
-                    <Button x:Name="TopSlot1" Classes="slot" AutomationProperties.Name="Top slot 1" />
-                    <Button x:Name="TopSlot2" Classes="slot" AutomationProperties.Name="Top slot 2" />
-                    <Button x:Name="TopSlot3" Classes="slot" AutomationProperties.Name="Top slot 3" />
-                    <Button x:Name="TopSlot4" Classes="slot" AutomationProperties.Name="Top slot 4" />
+                    <Button x:Name="TopSlot1" Classes="slot" AutomationProperties.Name="Top slot 1" Click="OnBoardSlotClick" />
+                    <Button x:Name="TopSlot2" Classes="slot" AutomationProperties.Name="Top slot 2" Click="OnBoardSlotClick" />
+                    <Button x:Name="TopSlot3" Classes="slot" AutomationProperties.Name="Top slot 3" Click="OnBoardSlotClick" />
+                    <Button x:Name="TopSlot4" Classes="slot" AutomationProperties.Name="Top slot 4" Click="OnBoardSlotClick" />
                 </StackPanel>
             </Border>
 
@@ -52,56 +52,43 @@
                           VerticalAlignment="Center">
                 <Grid MinWidth="900" VerticalAlignment="Center"
                       ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*">
-                    <Button x:Name="AceOfHearts" Grid.Column="0" Classes="card" AutomationProperties.Name="Ace of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="AceOfHearts" Grid.Column="0" Classes="card" AutomationProperties.Name="Ace of Hearts">
                         <Image Source="avares://Portau/Cards/AH.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="TwoOfHearts" Grid.Column="1" Classes="card" AutomationProperties.Name="2 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="TwoOfHearts" Grid.Column="1" Classes="card" AutomationProperties.Name="2 of Hearts">
                         <Image Source="avares://Portau/Cards/2H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="ThreeOfHearts" Grid.Column="2" Classes="card" AutomationProperties.Name="3 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="ThreeOfHearts" Grid.Column="2" Classes="card" AutomationProperties.Name="3 of Hearts">
                         <Image Source="avares://Portau/Cards/3H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="FourOfHearts" Grid.Column="3" Classes="card" AutomationProperties.Name="4 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="FourOfHearts" Grid.Column="3" Classes="card" AutomationProperties.Name="4 of Hearts">
                         <Image Source="avares://Portau/Cards/4H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="FiveOfHearts" Grid.Column="4" Classes="card" AutomationProperties.Name="5 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="FiveOfHearts" Grid.Column="4" Classes="card" AutomationProperties.Name="5 of Hearts">
                         <Image Source="avares://Portau/Cards/5H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="SixOfHearts" Grid.Column="5" Classes="card" AutomationProperties.Name="6 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="SixOfHearts" Grid.Column="5" Classes="card" AutomationProperties.Name="6 of Hearts">
                         <Image Source="avares://Portau/Cards/6H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="SevenOfHearts" Grid.Column="6" Classes="card" AutomationProperties.Name="7 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="SevenOfHearts" Grid.Column="6" Classes="card" AutomationProperties.Name="7 of Hearts">
                         <Image Source="avares://Portau/Cards/7H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="EightOfHearts" Grid.Column="7" Classes="card" AutomationProperties.Name="8 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="EightOfHearts" Grid.Column="7" Classes="card" AutomationProperties.Name="8 of Hearts">
                         <Image Source="avares://Portau/Cards/8H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="NineOfHearts" Grid.Column="8" Classes="card" AutomationProperties.Name="9 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="NineOfHearts" Grid.Column="8" Classes="card" AutomationProperties.Name="9 of Hearts">
                         <Image Source="avares://Portau/Cards/9H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="TenOfHearts" Grid.Column="9" Classes="card" AutomationProperties.Name="10 of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="TenOfHearts" Grid.Column="9" Classes="card" AutomationProperties.Name="10 of Hearts">
                         <Image Source="avares://Portau/Cards/10H.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="JackOfHearts" Grid.Column="10" Classes="card" AutomationProperties.Name="Jack of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="JackOfHearts" Grid.Column="10" Classes="card" AutomationProperties.Name="Jack of Hearts">
                         <Image Source="avares://Portau/Cards/JH.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="QueenOfHearts" Grid.Column="11" Classes="card" AutomationProperties.Name="Queen of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="QueenOfHearts" Grid.Column="11" Classes="card" AutomationProperties.Name="Queen of Hearts">
                         <Image Source="avares://Portau/Cards/QH.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
-                    <Button x:Name="KingOfHearts" Grid.Column="12" Classes="card" AutomationProperties.Name="King of Hearts"
-                            Click="OnHandCardClick">
+                    <Button x:Name="KingOfHearts" Grid.Column="12" Classes="card" AutomationProperties.Name="King of Hearts">
                         <Image Source="avares://Portau/Cards/KH.png" Opacity="0.2" Stretch="Fill" />
                     </Button>
                 </Grid>
@@ -117,10 +104,10 @@
             <Border Grid.Column="1" Background="#D8D8D8" Padding="16,12"
                     HorizontalAlignment="Center" VerticalAlignment="Bottom">
                 <StackPanel Orientation="Horizontal" Spacing="20">
-                    <Button x:Name="BottomSlot1" Classes="slot" AutomationProperties.Name="Bottom slot 1" />
-                    <Button x:Name="BottomSlot2" Classes="slot" AutomationProperties.Name="Bottom slot 2" />
-                    <Button x:Name="BottomSlot3" Classes="slot" AutomationProperties.Name="Bottom slot 3" />
-                    <Button x:Name="BottomSlot4" Classes="slot" AutomationProperties.Name="Bottom slot 4" />
+                    <Button x:Name="BottomSlot1" Classes="slot" AutomationProperties.Name="Bottom slot 1" Click="OnBoardSlotClick" />
+                    <Button x:Name="BottomSlot2" Classes="slot" AutomationProperties.Name="Bottom slot 2" Click="OnBoardSlotClick" />
+                    <Button x:Name="BottomSlot3" Classes="slot" AutomationProperties.Name="Bottom slot 3" Click="OnBoardSlotClick" />
+                    <Button x:Name="BottomSlot4" Classes="slot" AutomationProperties.Name="Bottom slot 4" Click="OnBoardSlotClick" />
                 </StackPanel>
             </Border>
 
